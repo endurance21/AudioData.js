@@ -19,4 +19,4 @@ NOW  coming to methods, so there are two methods of AudioData class here to extr
 
 
 #examples given are using minimal animation just for purpose of understanding !!!
-you can find one my project using this api htpps://endurance21.github.io/sound_visualisation 
+you can find one my project using this api https://endurance21.github.io/sound_visualisation 
