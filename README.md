@@ -1,32 +1,22 @@
 # AudioData.js
-you can find projects using this library
+It have AudioData.js file , that contains  a class named "AudioData" that defines audio context , source node, analyser node,and connecction between them that are essential for extracting data from AUDIO we feed into .
 
-1.
-https://endurance21.github.io/AudioVisualiser1
-
-2.
-https://endurance21.github.io/sound_visualisation 
-
-
-All it have is  AudioData.js file in the upper directory,
-It contains  a class named AudioData that defines audio context , source node, analyser node,and connecction between them that are essential for extracting data from AUDIO we feed into .
-
-All you need to do is create a audio element like this 
-const audio = new Audio("src")  , that's it now make a instance of AudioData class by passing that audio element as arguement to constructor .
-
-NOW what actually happens here is AudioData class uses WebAudio API (native) which works on FFT (FAST FOURIER TRANSFORM ALGORITHM) , the data we get is stored in array of particular size equal to #bufferLenth of instance created , that is accesible using audiodata.bufferLength . 
-
-NOW  coming to methods, so there are two methods of AudioData class  to extract realtime audio data in here  .
-1. time_domain()  =  it will return an array of size equal to bufferLength of audiodata instance , that contains amplitude of                                frequencies in time  , it means as time passes(that's whay named domain) 
-                     what is the amplitude of particular frequency range .
-
-2. frequency_domain() = it will return an array of size equal to bufferLength of audiodata instance that contains amplitude of different                        frquency Ranges at a particular time , frequency here is sampled .
-
-#one should keep in mind that these methods should be called in each frame audio plays so make sure to call these methods in a iterator .
-#also to extract the data one should play the audio using , audio.play() method .
-
-#each array returned from either methods contains values range 0 - 255 , float value  . Console.log() the array to see the data 
+Create a audio element like this 
+#const audio = new Audio("src")  ,
+and make a instance of AudioData class by passing that audio element as arguement to constructor like this 
+#const audiodata =  new AudioData(audio).
 
 
-#examples given are using minimal animation just for purpose of understanding !!!
+There are two methods of AudioData class  to extract realtime audio data  .
+#time_domain()  
+#frequency_domain()
+Both returns array of size  = bufferLength ,
+which is property of AudioData class acessebile as #audiodata.bufferLength .
+
+#call these methods  in each frame audio plays using iterator .
+#play audio first  using audio.play() to extract data.
+
+examples
+# https://endurance21.github.io/AudioVisualiser1
+#https://endurance21.github.io/sound_visualisation
 
