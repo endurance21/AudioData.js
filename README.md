@@ -2,7 +2,8 @@
 you can find projects using this api
 
 1.
-https://endurance21.github.io/AudioVisualiser1/
+https://endurance21.github.io/AudioVisualiser1
+
 2.
 https://endurance21.github.io/sound_visualisation 
 
