@@ -1,4 +1,11 @@
 # AudioData.js
+you can find projects using this api
+1.
+https://endurance21.github.io/AudioVisualiser1/
+2.
+https://endurance21.github.io/sound_visualisation 
+
+
 All it have is inside AudioData.js file in the upper directory,
 It contains  a class named AudioData that defines audio context , source node, analyser node,and connecction between them that are ssential for extracting data from AUDIO we feed into .
 
@@ -19,4 +26,4 @@ NOW  coming to methods, so there are two methods of AudioData class here to extr
 
 
 #examples given are using minimal animation just for purpose of understanding !!!
-you can find one my project using this api https://endurance21.github.io/sound_visualisation 
+
